@@ -1,0 +1,21 @@
+
+
+.container {
+    background: linear-gradient(90deg, black 50%, yellow 50%);
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    position: relative;
+    box-shadow: 2px 1px 3px #333;
+    margin: 10rem auto;
+    border-radius: 8px;
+}
+
+h1 {
+    color: yellow;
+    font-size: 3.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+}
