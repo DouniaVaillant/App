@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .container {
     background: linear-gradient(90deg, black 50%, yellow 50%);
@@ -17,5 +17,9 @@ h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    
+    transform: translate(-50%, -100%);
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    width: 500px;
+    mix-blend-mode: difference;
 }
