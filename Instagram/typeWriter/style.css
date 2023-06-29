@@ -7,7 +7,6 @@
   --tool: #fbc56c;
   --duration: 3s;
   position: relative;
-  -webkit-animation: bounce var(--duration) linear infinite;
   animation: bounce var(--duration) linear infinite;
 }
 .typewriter .slide {
@@ -17,11 +16,9 @@
   margin-left: 14px;
   transform: translateX(14px);
   background: linear-gradient(var(--blue), var(--blue-dark));
-  -webkit-animation: slide var(--duration) ease infinite;
   animation: slide var(--duration) ease infinite;
 }
-.typewriter .slide:before,
-.typewriter .slide:after,
+.typewriter .slide:before, .typewriter .slide:after,
 .typewriter .slide i:before {
   content: "";
   position: absolute;
@@ -65,7 +62,6 @@
   border-radius: 5px;
   background: var(--paper);
   transform: translateY(46px);
-  -webkit-animation: paper var(--duration) linear infinite;
   animation: paper var(--duration) linear infinite;
 }
 .typewriter .paper:before {
@@ -87,8 +83,7 @@
   z-index: 1;
   position: relative;
 }
-.typewriter .keyboard:before,
-.typewriter .keyboard:after {
+.typewriter .keyboard:before, .typewriter .keyboard:after {
   content: "";
   position: absolute;
 }
@@ -108,32 +103,12 @@
   width: 11px;
   height: 4px;
   border-radius: 2px;
-  box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-    60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-    22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-    60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  -webkit-animation: keyboard var(--duration) linear infinite;
+  box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   animation: keyboard var(--duration) linear infinite;
 }
 
-@-webkit-keyframes bounce {
-  85%,
-  92%,
-  100% {
-    transform: translateY(0);
-  }
-  89% {
-    transform: translateY(-4px);
-  }
-  95% {
-    transform: translateY(2px);
-  }
-}
-
 @keyframes bounce {
-  85%,
-  92%,
-  100% {
+  85%, 92%, 100% {
     transform: translateY(0);
   }
   89% {
@@ -141,246 +116,78 @@
   }
   95% {
     transform: translateY(2px);
-  }
-}
-@-webkit-keyframes slide {
-  5% {
-    transform: translateX(14px);
-  }
-  15%,
-  30% {
-    transform: translateX(6px);
-  }
-  40%,
-  55% {
-    transform: translateX(0);
-  }
-  65%,
-  70% {
-    transform: translateX(-4px);
-  }
-  80%,
-  89% {
-    transform: translateX(-12px);
-  }
-  100% {
-    transform: translateX(14px);
   }
 }
 @keyframes slide {
   5% {
     transform: translateX(14px);
   }
-  15%,
-  30% {
+  15%, 30% {
     transform: translateX(6px);
   }
-  40%,
-  55% {
+  40%, 55% {
     transform: translateX(0);
   }
-  65%,
-  70% {
+  65%, 70% {
     transform: translateX(-4px);
   }
-  80%,
-  89% {
+  80%, 89% {
     transform: translateX(-12px);
   }
   100% {
     transform: translateX(14px);
   }
 }
-@-webkit-keyframes paper {
-  5% {
-    transform: translateY(46px);
-  }
-  20%,
-  30% {
-    transform: translateY(34px);
-  }
-  40%,
-  55% {
-    transform: translateY(22px);
-  }
-  65%,
-  70% {
-    transform: translateY(10px);
-  }
-  80%,
-  85% {
-    transform: translateY(0);
-  }
-  92%,
-  100% {
-    transform: translateY(46px);
-  }
-}
 @keyframes paper {
   5% {
     transform: translateY(46px);
   }
-  20%,
-  30% {
+  20%, 30% {
     transform: translateY(34px);
   }
-  40%,
-  55% {
+  40%, 55% {
     transform: translateY(22px);
   }
-  65%,
-  70% {
+  65%, 70% {
     transform: translateY(10px);
   }
-  80%,
-  85% {
+  80%, 85% {
     transform: translateY(0);
   }
-  92%,
-  100% {
+  92%, 100% {
     transform: translateY(46px);
   }
 }
-@-webkit-keyframes keyboard {
-  5%,
-  12%,
-  21%,
-  30%,
-  39%,
-  48%,
-  57%,
-  66%,
-  75%,
-  84% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  9% {
-    box-shadow: 15px 2px 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  18% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 2px 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  27% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 12px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  36% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 12px 0 var(--key),
-      60px 12px 0 var(--key), 68px 12px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  45% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 2px 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  54% {
-    box-shadow: 15px 0 0 var(--key), 30px 2px 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  63% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 12px 0 var(--key);
-  }
-  72% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 2px 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-  81% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 12px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
-  }
-}
 @keyframes keyboard {
-  5%,
-  12%,
-  21%,
-  30%,
-  39%,
-  48%,
-  57%,
-  66%,
-  75%,
-  84% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+  5%, 12%, 21%, 30%, 39%, 48%, 57%, 66%, 75%, 84% {
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
   9% {
-    box-shadow: 15px 2px 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 2px 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
   18% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 2px 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 2px 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
   27% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 12px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 12px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
   36% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 12px 0 var(--key),
-      60px 12px 0 var(--key), 68px 12px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 12px 0 var(--key), 60px 12px 0 var(--key), 68px 12px 0 var(--key), 83px 10px 0 var(--key);
   }
   45% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 2px 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 2px 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
   54% {
-    box-shadow: 15px 0 0 var(--key), 30px 2px 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 2px 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
   63% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 12px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 12px 0 var(--key);
   }
   72% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 2px 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 2px 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
   81% {
-    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key),
-      60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
-      22px 10px 0 var(--key), 37px 12px 0 var(--key), 52px 10px 0 var(--key),
-      60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 12px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
 }
 html {
@@ -391,8 +198,7 @@ html {
 * {
   box-sizing: inherit;
 }
-*:before,
-*:after {
+*:before, *:after {
   box-sizing: inherit;
 }
 
@@ -413,4 +219,4 @@ body .dribbble {
 body .dribbble img {
   display: block;
   height: 28px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
